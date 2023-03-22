@@ -275,6 +275,7 @@ header ul li a:visited {
 
 .table_outer {
     width: 100%;
+    padding: 0px 34px;
 }
 
 .table_scroll {
@@ -333,6 +334,16 @@ th {
     text-align: center;
 }
 
+@media screen and (max-width:1204px) {
+    .pandect .grade {
+        margin-left: 0px;
+    }
+
+    .list {
+        padding-right: 20px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     text {
         display: none;
@@ -366,7 +377,8 @@ th {
 }
 
 @media screen and (max-width:1340px) {
-    .list .box:nth-child(1) {
+
+    /* .list .box:nth-child(1) {
         width: 170px;
     }
 
@@ -390,5 +402,18 @@ th {
         overflow: hidden;
         overflow-x: auto;
         justify-content: none !important;
+    } */
+    .list {
+        height: auto;
+        width: 1460px;
+        max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1.1fr 1.2fr 1fr;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .list .box {
+        margin-bottom: 5px;
     }
 }
