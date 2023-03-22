@@ -1,0 +1,25 @@
+.text-container {
+    width: 200px;
+    /*设置文本容器的宽度*/
+    overflow: hidden;
+    /*隐藏超出容器宽度的文本*/
+    border: 2px solid black;
+}
+
+.text {
+    white-space: nowrap;
+    /*防止文本换行*/
+    overflow: hidden;
+    /*隐藏超出容器宽度的文本*/
+    text-overflow: ellipsis;
+    /*显示省略号，表示文本被截断*/
+}
+
+.text:hover {
+    white-space: normal;
+    /*显示全部文本*/
+    overflow: visible;
+    /*显示全部文本*/
+    text-overflow: unset;
+    /*取消省略号*/
+}
