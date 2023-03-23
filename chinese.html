@@ -42,9 +42,9 @@
   <body>
     <main>
       <header class="sticky-top site-header">
-        <section class="intro heroheader">
+        <section class="intro heroheader h-100">
           <!-- navbar -->
-          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent pt-6">
+          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent h-100">
             <!-- 漢堡選單 -->
             <button
               class="navbar-toggler"
@@ -59,43 +59,39 @@
             </button>
 
             <!-- LOGO -->
-            <div class="justify-content-md-center LOGO">
+            <div class="justify-content-md-center LOGO h-100">
               <img class="CHWA" src="img/logo.png" />
             </div>
 
             <!-- nav-items -->
             <div
-              class="collapse navbar-collapse justify-content-lg-end"
+              class="collapse navbar-collapse justify-content-lg-end h-100"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav d-flex">
-                <li class="nav-item mx-2 p-0">
+              <ul class="navbar-nav d-flex h-100 w-100">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上模考</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上評測練習</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">統測落點分析</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">作文寫作檢定</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">試務中心</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">意見反映</a>
                 </li>
-
-                <button class="btn btn-danger signout" type="submit">
-                  系統登出
-                </button>
+                <li class="nav-item p-0">
+                  <button class="btn btn-danger signout" type="submit">
+                    <p class="p-0 m-0">系統登出</p>
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -323,7 +319,7 @@
               </div>
             </form>
           </div>
-          <div class="box">
+          <div class="box test">
             <form id="list5" class="item-box test-suject">
               <div class="title px-1">
                 <p class="m-0">考試科目</p>
@@ -342,28 +338,61 @@
           </div>
         </div>
       </div>
-      <div class="table_outer d-flex justify-content-center  pb-5">
+      <div class="table_outer d-flex justify-content-center pb-5">
         <div class="table_scroll">
-          <table id="myTable" data-toggle="table" data-height="600">
+          <table
+            id="myTable"
+            data-toggle="table"
+            data-height="500"
+      
+          >
             <thead>
               <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  准考證號碼
+                </th>
+                <th
+                  rowspan="2"
+                  id="department"
+                  data-sortable="true"
+                  class="sticky-th"
+                >
+                  科系名稱
+                </th>
+                <th
+                  rowspan="2"
+                  id="class"
+                  data-sortable="true"
+                  class="sticky-th"
+                >
+                  班級
+                </th>
+                <th
+                  rowspan="2"
+                  id="number"
+                  data-sortable="true"
+                  class="sticky-th"
+                >
+                  座號
+                </th>
+                <th
+                  rowspan="2"
+                  id="name"
+                  data-sortable="true"
+                  class="sticky-th"
+                >
+                  姓名
+                </th>
                 <th colspan="7" class="text-center">國文</th>
                 <th colspan="3" class="text-center">總分排名</th>
               </tr>
               <tr>
-                <th class="fixed" data-sortable="true">准考證號碼</th>
-                <th id="department" class="fixed" data-sortable="true">
-                  科系名稱
-                </th>
-                <th id="class" class="fixed" data-sortable="true">班級</th>
-                <th id="number" class="fixed" data-sortable="true">座號</th>
-                <th id="name" class="fixed" data-sortable="true">姓名</th>
-                <th id="choose" class="fixed" data-sortable="true">選擇</th>
+                <th id="choose" data-sortable="true">選擇</th>
                 <th id="composition" data-sortable="true">作文</th>
                 <th id="total" data-sortable="true">合計</th>
                 <th id="Fraction" data-sortable="true">級分</th>
@@ -377,12 +406,12 @@
             </thead>
             <tbody>
               <tr>
-                <td class="fixed">123456789</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">豬曉諭</td>
-                <td class="fixed">60</td>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -400,15 +429,15 @@
                 <td>0</td>
               </tr>
               <tr>
-                <td class="fixed">987654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">02</td>
-                <td class="fixed">02</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -421,17 +450,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -444,17 +472,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -467,17 +494,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -490,17 +516,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -513,17 +538,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -536,17 +560,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -559,17 +582,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -582,17 +604,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -605,17 +626,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>
@@ -628,63 +648,16 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
+              </tr>      <tr>
+                <td class="sticky-td">123456789</td>
+                <td class="sticky-td">資管系</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">豬曉諭</td>
+                <td>60</td>
+                <td>12</td>
+                <td>72</td>
                 <td>20</td>
-                <td>68</td>
-                <td>15</td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
-                <td>20</td>
-                <td>68</td>
-                <td>15</td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>
-                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td class="fixed">897654321</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">03</td>
-                <td class="fixed">03</td>
-                <td class="fixed">黃大銘</td>
-                <td class="fixed">70</td>
-                <td>20</td>
-                <td>68</td>
-                <td>15</td>
                 <td>
                   能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
                 </td>

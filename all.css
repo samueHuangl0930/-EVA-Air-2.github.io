@@ -12,7 +12,10 @@ main {
 }
 
 header {
-    background-color: #674799;
+    background: rgb(128, 103, 170);
+    background: linear-gradient(0deg, rgba(128, 103, 170, 1) 0%, rgba(91, 60, 147, 1) 25%, rgba(128, 103, 170, 1) 100%);
+    ;
+    height: 96px;
 }
 
 section {
@@ -20,8 +23,10 @@ section {
 }
 
 .LOGO {
-    width: 170px;
+    width: 250px;
     height: 80px;
+    border-right: 1px solid #B1A6D0;
+    border-bottom: 1px solid #775da3;
 }
 
 
@@ -31,10 +36,12 @@ section {
     height: 100%;
 }
 
-header a {
-    text-decoration: underline;
-    width: auto;
 
+
+header ul li {
+    border-right: 1px solid #B1A6D0;
+    border-bottom: 1px solid #775da3;
+    border-left: 1px solid #775da3;
 }
 
 header ul li a {
@@ -54,9 +61,19 @@ header ul li a:visited {
     color: white
 }
 
+.navbar {
+    padding: 0px 5px;
+}
+
 .nav-item {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 15%;
+}
+
+.nav-item a {
+    text-decoration: none;
 }
 
 .navbar-nav text {
@@ -65,9 +82,23 @@ header ul li a:visited {
 }
 
 .navbar-nav .signout {
-    margin-left: 20px;
-    width: 100px;
-    background-color: red;
+    height: 30px;
+    border: 1px solid #B9B9B9;
+    border-radius: 16px;
+    background: rgb(179, 179, 179);
+    background: linear-gradient(325deg, rgba(179, 179, 179, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, .1);
+
+}
+
+.navbar-nav .signout p {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: rgb(251, 251, 251);
+    background: linear-gradient(0deg, rgba(251, 251, 251, 1) 0%, rgba(198, 200, 200, 1) 100%);
+    font-size: 12px;
+    color: black;
 }
 
 
@@ -85,19 +116,6 @@ header ul li a:visited {
     color: blue;
 }
 
-.pandect .grade {
-    /* border: 2px solid black; */
-    width: 300px;
-    height: auto;
-    position: relative;
-}
-
-.grade ul li {
-    list-style-type: none;
-    /* background-color: white; */
-    width: 100%;
-}
-
 .list {
     /* background-color: blue; */
     height: 235px;
@@ -105,9 +123,10 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.2fr 1.3fr 1fr 1.3fr 1.5fr;
     align-items: flex-end;
 }
+
 
 
 .list .box {
@@ -130,13 +149,13 @@ header ul li a:visited {
     display: flex;
     flex-direction: column;
     /* overflow-y: scroll; */
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .practice-exam .title {
     width: 100%;
     /* width: 180px; */
-    background-color: #ADADAD;
+    background-color: rgba(0, 0, 0, 0.09);
     display: flex;
     justify-content: center;
 }
@@ -148,13 +167,13 @@ header ul li a:visited {
     /* width: 350px; */
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .report-number .title {
     width: 100%;
     /* width: 180px; */
-    background-color: #ADADAD;
+    background-color:  rgba(0, 0, 0, 0.09);
     display: flex;
     justify-content: center;
 }
@@ -166,13 +185,13 @@ header ul li a:visited {
     /* width: 200px; */
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .class .title {
     width: 100%;
     /* width: 180px; */
-    background-color: #ADADAD;
+    background-color:  rgba(0, 0, 0, 0.09);
     display: flex;
     justify-content: center;
 }
@@ -184,13 +203,13 @@ header ul li a:visited {
     /* width: 200px; */
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .kind-group .title {
     width: 100%;
     /* width: 180px; */
-    background-color: #ADADAD;
+    background-color:  rgba(0, 0, 0, 0.09);
     display: flex;
     justify-content: center;
 }
@@ -202,13 +221,13 @@ header ul li a:visited {
     /* width: 400px; */
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .test-suject .title {
     width: 100%;
     /* width: 180px; */
-    background-color: #ADADAD;
+    background-color:  rgba(0, 0, 0, 0.09);
     display: flex;
     justify-content: end;
 
@@ -232,12 +251,12 @@ header ul li a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-
 }
+
 
 .test-sujectarea a {
     height: 68px;
-    background-color: #ADADAD;
+    background-color: #223A56;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -250,7 +269,7 @@ header ul li a:visited {
 }
 
 .test-sujectarea a:after {
-    background-color: #ADADAD;
+    background-color: #223A56;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -260,7 +279,7 @@ header ul li a:visited {
 }
 
 .test-sujectarea a:hover {
-    background-color: #7B7B7B;
+    background-color: #8DB1C4;
 }
 
 /*table*/
@@ -277,54 +296,169 @@ header ul li a:visited {
 
 }
 
+/* table {
+    border: 2px solid black!important;
+    border-collapse: collapse;
+} */
+th,
+td {
+    border: 2px ridge black !important;
+    height: auto;
+    width: auto;
+}
+
+
+
+.fht-cell {
+    width: 121px !important;
+    overflow: hidden;
+}
+
+
+.comments .fht-cell {
+    width: 400px !important;
+}
+
+td {
+    width: auto !important;
+}
+
+/*顏色設定*/
+thead {
+    color: white;
+    font-weight: 900;
+}
+
+thead tr:nth-child(1) {
+    background-color: #223A56;
+}
+
+thead tr:nth-child(2) {
+    background-color: #8DB1C4;
+}
+
+.sticky-th {
+    background-color: #223A56 !important;
+}
+
+
 
 /*格行換色*/
-table tr th {
-    height: 28px;
+/* table tr th {
+    height: 25px;
     line-height: 28px;
     background: #f0f7ff;
-}
+} */
 
-thead {
-    background-color: #84C1FF;
-}
-
-table tr td {
-    height: 28px;
-    width: 120px;
-}
-
-table tbody tr:nth-child(odd) {
+/* table tbody tr:nth-child(odd) {
     background-color: #d2e8ff;
+} */
+
+table tbody tr:hover,
+table tbody th:hover {
+    background-color: #8DB1C4 !important;
 }
 
-table tbody tr:hover {
-    background-color: #9393FF !important;
+.table-hover>tbody>tr:hover>* {
+    --bs-table-accent-bg: #8DB1C4;
+    color: var(--bs-table-hover-color);
 }
 
-td:first-child,
-th:first-child {
+
+thead tr:nth-child(1) th:nth-child(1),
+tr td:nth-child(1) {
+
+    position: sticky;
+    left: 0px;
+    /* 首行永遠固定於左 */
+    z-index: 1;
+    background-color: white;
+
+}
+
+thead tr:nth-child(1) th:nth-child(2),
+tr td:nth-child(2) {
 
     position: sticky;
 
-    left: 0;
+    left: 123px;
     /* 首行永遠固定於左 */
 
     z-index: 1;
 
-    background-color: #84C1FF;
+    background-color: white;
+
+}
+
+thead tr:nth-child(1) th:nth-child(3),
+tr td:nth-child(3) {
+
+    position: sticky;
+
+    left: 244px;
+    /* 首行永遠固定於左 */
+
+    z-index: 1;
+
+    background-color: white;
+
+}
+
+thead tr:nth-child(1) th:nth-child(4),
+tr td:nth-child(4) {
+
+    position: sticky;
+
+    left: 365px;
+    /* 首行永遠固定於左 */
+
+    z-index: 1;
+
+    background-color: white;
+
+}
+
+thead tr:nth-child(1) th:nth-child(5),
+tr td:nth-child(5) {
+
+    position: sticky;
+
+    left: 486px;
+    /* 首行永遠固定於左 */
+
+    z-index: 1;
+
+    background-color: white;
 
 }
 
 td,
 th {
     text-align: center;
+
+    vertical-align: middle;
+
+}
+
+.bootstrap-table .fixed-table-container .table thead th {
+    text-align: center;
+
+    vertical-align: middle !important;
+}
+
+@media screen and (max-width:1265px) {
+    .list {
+        width: 1460px;
+        max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1.2fr 1.5fr 1fr;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:1204px) {
-    .pandect .grade {
-        margin-left: 0px;
-    }
+
 
     .list {
         padding-right: 20px;
@@ -334,6 +468,20 @@ th {
 @media screen and (max-width:1200px) {
     text {
         display: none;
+    }
+
+    .navbar-nav {
+        position: relative;
+        left: -10px;
+        width: 140px !important;
+        height: 400px !important;
+        background-color: #775da3;
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
     }
 }
 
@@ -357,7 +505,33 @@ th {
         width: 1460px;
         max-width: 100% !important;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+        grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pandect {
+        padding: 0 0 10px 0;
+        max-width: 100% !important;
+        width: 1460px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .list {
+        width: 1460px;
+        max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
         flex-direction: row;
         align-items: center;
     }
@@ -395,7 +569,7 @@ th {
         width: 1460px;
         max-width: 100% !important;
         display: grid;
-        grid-template-columns: 1.1fr 1.2fr 1fr;
+        grid-template-columns: 1.1fr 1.2fr;
         flex-direction: row;
         align-items: center;
     }
@@ -403,4 +577,81 @@ th {
     .list .box {
         margin-bottom: 5px;
     }
+
+    .test-sujectarea {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+        align-items: center;
+    }
+
+    .test-sujectarea {
+        /* height: 73px;
+        width: 120px; */
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+
+    }
+
+    .test-sujectarea a {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title p,
+    .title i {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .test-sujectarea {
+        /* height: 73px;
+        width: 120px; */
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .pandect span p {
+        font-size: 17px;
+    }
+
+    .pandect .grade {
+        width: 300px;
+    }
+
+    .grade p {
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+
+    .title i {
+        font-size: 15px;
+    }
+
+    .test-sujectarea {
+        /* height: 73px;
+        width: 120px; */
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+
+    .test-sujectarea a {
+        height: 50px;
+    }
+
+
 }

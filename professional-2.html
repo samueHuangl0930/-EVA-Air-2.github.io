@@ -42,9 +42,9 @@
   <body>
     <main>
       <header class="sticky-top site-header">
-        <section class="intro heroheader">
+        <section class="intro heroheader h-100">
           <!-- navbar -->
-          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent pt-6">
+          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent h-100">
             <!-- 漢堡選單 -->
             <button
               class="navbar-toggler"
@@ -59,43 +59,39 @@
             </button>
 
             <!-- LOGO -->
-            <div class="justify-content-md-center LOGO">
+            <div class="justify-content-md-center LOGO h-100">
               <img class="CHWA" src="img/logo.png" />
             </div>
 
             <!-- nav-items -->
             <div
-              class="collapse navbar-collapse justify-content-lg-end"
+              class="collapse navbar-collapse justify-content-lg-end h-100"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav d-flex">
-                <li class="nav-item mx-2 p-0">
+              <ul class="navbar-nav d-flex h-100 w-100">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上模考</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上評測練習</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">統測落點分析</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">作文寫作檢定</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">試務中心</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">意見反映</a>
                 </li>
-
-                <button class="btn btn-danger signout" type="submit">
-                  系統登出
-                </button>
+                <li class="nav-item p-0">
+                  <button class="btn btn-danger signout" type="submit">
+                    <p class="p-0 m-0">系統登出</p>
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -350,20 +346,47 @@
           <table id="myTable" data-toggle="table" data-height="600">
             <thead>
               <tr>
-                <th colspan="7"></th>
+                <th data-sortable="true" rowspan="2" class="sticky-th">
+                  准考證號碼
+                </th>
+                <th
+                  id="department"
+                  data-sortable="true"
+                  rowspan="2"
+                  class="sticky-th"
+                >
+                  科系名稱
+                </th>
+                <th
+                  id="class"
+                  data-sortable="true"
+                  rowspan="2"
+                  class="sticky-th"
+                >
+                  班級
+                </th>
+                <th
+                  id="number"
+                  data-sortable="true"
+                  rowspan="2"
+                  class="sticky-th"
+                >
+                  座號
+                </th>
+                <th
+                  id="name"
+                  data-sortable="true"
+                  rowspan="2"
+                  class="sticky-th"
+                >
+                  姓名
+                </th>
                 <th class="text-center">專二</th>
                 <th class="text-center">基本設計實習</th>
                 <th class="text-center">基礎圖學實習</th>
-                <th colspan="5" class="text-center">總分</th>
+                <th colspan="7" class="text-center">總分</th>
               </tr>
               <tr>
-                <th class="fixed id" data-sortable="true">准考證號碼</th>
-                <th id="department" class="fixed" data-sortable="true">
-                  科系名稱
-                </th>
-                <th id="class" class="fixed" data-sortable="true">班級</th>
-                <th id="number" class="fixed" data-sortable="true">座號</th>
-                <th id="name" class="fixed" data-sortable="true">姓名</th>
                 <th id="total" data-sortable="true">分數</th>
                 <th id="Fraction" data-sortable="true">級分</th>
                 <th class="comments" data-sortable="true">分數</th>
@@ -378,12 +401,12 @@
             </thead>
             <tbody>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -395,12 +418,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -412,12 +435,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -429,12 +452,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -446,12 +469,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -463,12 +486,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -480,12 +503,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -497,12 +520,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -514,12 +537,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -531,12 +554,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -548,12 +571,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
@@ -565,12 +588,12 @@
                 <td>20</td>
               </tr>
               <tr>
-                <td class="fixed">248659715</td>
-                <td class="fixed">資管系</td>
-                <td class="fixed">01</td>
-                <td class="fixed">01</td>
-                <td class="fixed">黃曉明</td>
-                <td class="fixed">60</td>
+                <td  class="sticky-td">248659715</td>
+                <td  class="sticky-td">資管系</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">01</td>
+                <td  class="sticky-td">黃曉明</td>
+                <td  class="sticky-td">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
