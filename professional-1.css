@@ -128,7 +128,7 @@ header ul li a:visited {
 
 
 .pandect {
-    height: 260px;
+    height: 265px;
 }
 
 .path span {
@@ -159,7 +159,7 @@ header ul li a:visited {
 .pandect .grade {
     border: 2px solid#DBDBDB;
     background-color: #FFFFFF;
-    width: 390px;
+    width: 350px;
     height: auto;
     position: relative;
     margin-left: 15px;
@@ -577,10 +577,10 @@ background-color: #F1F1F1;
 }
 
 @media screen and (max-width:1730px) {
-    .item {
+    /* .item {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .pandect {
         padding: 0 0 10px 0;
@@ -598,7 +598,7 @@ background-color: #F1F1F1;
         display: grid;
         grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
     }
 }
 

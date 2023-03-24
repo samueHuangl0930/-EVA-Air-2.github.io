@@ -513,13 +513,14 @@ td {
     }
 
     .pandect {
-        padding: 0 0 10px 0;
+        display: none;
+        /* padding: 0 0 10px 0;
         max-width: 100% !important;
         width: 1730px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        justify-content: end;
+        justify-content: end; */
     }
 
     .list {
