@@ -548,7 +548,7 @@ background-color: #F1F1F1;
 
 @media screen and (max-width:1204px) {
     .pandect .grade {
-        margin-left: 0px;
+        margin-left: 13px;
     }
 
     .list {
@@ -582,7 +582,7 @@ background-color: #F1F1F1;
         flex-direction: column;
     } */
 
-    .pandect {
+    /* .pandect {
         padding: 0 0 10px 0;
         max-width: 100% !important;
         width: 1730px;
@@ -599,7 +599,7 @@ background-color: #F1F1F1;
         grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
         flex-direction: row;
         align-items: start;
-    }
+    } */
 }
 
 @media screen and (max-width:1460px) {

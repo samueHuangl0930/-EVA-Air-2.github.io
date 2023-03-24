@@ -547,7 +547,7 @@ background-color: #F1F1F1;
 }
 @media screen and (max-width:1204px) {
     .pandect .grade {
-        margin-left: 0px;
+        margin-left: 13px;
     }
 
     .list {
@@ -705,7 +705,11 @@ background-color: #F1F1F1;
 
     }
 }
-
+@media screen and (max-width:768px){
+    .pandect{
+        height: auto;
+    }
+}
 @media screen and (max-width:500px) {
     .pandect span p {
         font-size: 17px;
