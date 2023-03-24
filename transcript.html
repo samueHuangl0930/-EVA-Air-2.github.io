@@ -34,9 +34,9 @@
   <body>
     <main>
       <header class="sticky-top site-header">
-        <section class="intro heroheader">
+        <section class="intro heroheader h-100">
           <!-- navbar -->
-          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent pt-6">
+          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent h-100">
             <!-- 漢堡選單 -->
             <button
               class="navbar-toggler"
@@ -51,43 +51,56 @@
             </button>
 
             <!-- LOGO -->
-            <div class="justify-content-md-center LOGO">
-              <img class="CHWA" src="img/logo.png" />
+            <div class="justify-content-md-center LOGO h-100">
+              <a href="#">
+                <img class="CHWA" src="img/logo.png" />
+              </a>
             </div>
 
             <!-- nav-items -->
             <div
-              class="collapse navbar-collapse justify-content-lg-end"
+              class="collapse navbar-collapse justify-content-lg-end h-100"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav d-flex">
-                <li class="nav-item mx-2 p-0">
+              <ul class="navbar-nav d-flex justify-content-lg-end h-100 w-100">
+                <li class="nav-item p-0"></li>
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上模考</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">線上評測練習</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <!-- <li class="nav-item p-0">
                   <a class="py-2" href="#">統測落點分析</a>
-                </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                </li> -->
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">作文寫作檢定</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <li class="nav-item p-0">
                   <a class="py-2" href="#">試務中心</a>
                 </li>
-                <text>|</text>
-                <li class="nav-item mx-2 p-0">
+                <!-- <li class="nav-item p-0">
                   <a class="py-2" href="#">意見反映</a>
+                </li> -->
+                <li
+                  class="nav-item p-0 d-flexjustify-content-center align-items-center"
+                >
+                  <div class="d-flex flex-column align-items-end signout-area">
+                    <span
+                      class="d-flex flex-row justify-content-center align-items-center pb-2"
+                    >
+                      <img src="img/icon-login-1.png" class="me-2" />
+                      <p
+                        class="p-0 m-0 login-bar d-flex align-items-center justify-content-center font-weight-bold text-white"
+                      >
+                        台北市士林高商
+                      </p>
+                    </span>
+                    <button class="btn btn-danger signout" type="submit">
+                      <p class="p-0 m-0 text-dark">系統登出</p>
+                    </button>
+                  </div>
                 </li>
-
-                <button class="btn btn-danger signout" type="submit">
-                  系統登出
-                </button>
               </ul>
             </div>
 
@@ -96,12 +109,15 @@
         </section>
       </header>
       <div class="row py-2 m-0 item">
-        <div class="col-md-12 col-lg-3 pandect px-2">
+        <div class="col-12 path mb-2">
           <span class="d-flex flex-row"
-            ><p>九月複習考</p>
-            <p>></p>
-            <p>B102各校各班級成績總表</p></span
-          >
+            ><p class="p-0 m-0">九月複習考</p>
+            <p class="p-0 mx-2">></p>
+            <p class="p-0 m-0">B102各校各班級成績總表</p>
+          </span>
+        </div>
+        <div class="col-md-12 col-lg-3 pandect px-2">
+          
         </div>
         <div class="col-md-12 col-lg-4 list">
           <div class="box">
