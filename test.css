@@ -188,9 +188,9 @@ header ul li a:visited {
     height: 235px;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
-    display: grid;
-    grid-template-columns: 1.3fr 1.6fr 0.8fr 0.8fr 1.2fr;
+    justify-content: end;
+    /* display: grid;
+    grid-template-columns: 1.3fr 1.6fr 0.8fr 0.8fr 1.2fr; */
 
 }
 
@@ -208,9 +208,9 @@ header ul li a:visited {
 
 
 /*模擬考*/
+
 .practice-exam {
     height: 190px;
-
     background-color: #FFFFFF;
     /* width: 200px; */
     display: flex;
@@ -619,12 +619,103 @@ tr td:nth-child(8) {
     vertical-align: middle !important;
 }
 
+@media screen and (max-width:1640px) {
+    .path span p {
+        font-size: 15px !important;
+
+    }
+
+
+    .pandect .grade {
+
+        width: 340px;
+
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .title {
+
+        font-size: 12px;
+
+    }
+
+    .item-list {
+
+        font-size: 12px;
+
+    }
+
+    /*考試科目*/
+
+
+    .test-suject .title p {}
+
+    .test-suject .title i {}
+
+
+
+    .test-sujectarea .btn-theme {
+        border-color: #223a56;
+        background-color: #223a56;
+        color: #fff;
+        font-size: 12px;
+        width: 50px;
+        height: 30px;
+    }
+
+    .test-sujectarea .btn-theme:nth-child(5),
+    .test-sujectarea .btn-theme:nth-child(6) {
+        width: 65px;
+        height: 30px;
+    }
+}
+
 @media screen and (max-width:1480px) {
+    .path span p {
+        font-size: 16px;
+
+    }
+
+
+    .pandect .grade {
+
+        width: 350px;
+
+        margin-left: 15px;
+        font-size:16px;
+    }
+
+    .title {
+
+        font-size: 16px;
+
+    }
+
+    .item-list {
+
+        font-size: 16px;
+
+    }
     .item {
         display: flex;
         flex-direction: column;
     }
 
+    .test-sujectarea .btn-theme {
+        border-color: #223a56;
+        background-color: #223a56;
+        color: #fff;
+        width: 58px;
+        height: 38px;
+    }
+    
+    
+    .test-sujectarea .btn-theme:nth-child(5),
+    .test-sujectarea .btn-theme:nth-child(6) {
+        width: 74px;
+        height: 38px;
+    }
     .pandect {
         padding: 0 0 10px 0;
         max-width: 100% !important;
@@ -638,9 +729,13 @@ tr td:nth-child(8) {
     .list {
         width: 1480px;
         max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1.1fr 1.2fr;
+        flex-direction: row;
+        align-items: center;
     }
 
-    
+
 }
 
 @media screen and (max-width:1265px) {
@@ -648,7 +743,7 @@ tr td:nth-child(8) {
         width: 1460px;
         max-width: 100% !important;
         display: grid;
-        grid-template-columns:1.1fr 1.2fr ;
+        grid-template-columns: 1.1fr 1.2fr;
         flex-direction: row;
         align-items: center;
     }
@@ -819,7 +914,8 @@ tr td:nth-child(8) {
 
     } */
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
     .list {
         height: auto;
         width: 1460px;
@@ -828,7 +924,25 @@ tr td:nth-child(8) {
         grid-template-columns: 1.1fr 1.2fr;
         flex-direction: row;
         align-items: center;
-    } 
+    }
+}
+@media screen and (max-width:600px){
+    .test-sujectarea .btn-theme {
+        border-color: #223a56;
+        background-color: #223a56;
+        color: #fff;
+        width: 30%;
+        height: 38px;
+    }
+}
+@media screen and (max-width:600px){
+    .test-sujectarea .btn-theme {
+        border-color: #223a56;
+        background-color: #223a56;
+        color: #fff;
+        width: 50%;
+        height: 38px;
+    }
 }
 @media screen and (max-width:500px) {
     .pandect span p {
