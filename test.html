@@ -1,13 +1,549 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Fixed Table Header</title>
-	<link rel="stylesheet" href="test.css" />
-</head>
-<body>
-	<div class="text-container">
-		<p class="text">这是一段需要限制字数的文本内容</p>
-	  </div>
-	  
-</body>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="chinese.css" />
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <title>chinese</title>
+  </head>
+  <body>
+    <main>
+      <header class="sticky-top site-header">
+        <section class="intro heroheader h-100">
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-xl navbar-dark bg-transparent h-100">
+            <!-- 漢堡選單 -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- LOGO -->
+            <div class="justify-content-md-center LOGO h-100">
+              <a href="#">
+                <img class="CHWA" src="img/logo.png" />
+              </a>
+            </div>
+
+            <!-- nav-items -->
+            <div
+              class="collapse navbar-collapse justify-content-lg-end h-100"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav d-flex justify-content-lg-end h-100 w-100">
+                <li class="nav-item p-0"></li>
+                <li class="nav-item p-0">
+                  <a class="py-2" href="#">線上模考</a>
+                </li>
+                <li class="nav-item p-0">
+                  <a class="py-2" href="#">線上評測練習</a>
+                </li>
+                <!-- <li class="nav-item p-0">
+                  <a class="py-2" href="#">統測落點分析</a>
+                </li> -->
+                <li class="nav-item p-0">
+                  <a class="py-2" href="#">作文寫作檢定</a>
+                </li>
+                <li class="nav-item p-0">
+                  <a class="py-2" href="#">試務中心</a>
+                </li>
+                <!-- <li class="nav-item p-0">
+                  <a class="py-2" href="#">意見反映</a>
+                </li> -->
+                <li
+                  class="nav-item p-0 d-flexjustify-content-center align-items-center"
+                >
+                  <div class="d-flex flex-column align-items-end signout-area">
+                    <span
+                      class="d-flex flex-row justify-content-center align-items-center pb-2"
+                    >
+                      <img src="img/icon-login-1.png" class="me-2" />
+                      <p
+                        class="p-0 m-0 login-bar d-flex align-items-center justify-content-center font-weight-bold text-white"
+                      >
+                        台北市士林高商
+                      </p>
+                    </span>
+                    <button class="btn btn-danger signout" type="submit">
+                      <p class="p-0 m-0 text-dark">系統登出</p>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- btn -->
+          </nav>
+        </section>
+      </header>
+      <div class="row py-2 m-0 item px-3">
+        <div class="col-12 path mb-2">
+          <span class="d-flex flex-row"
+            ><p class="p-0 m-0">九月複習考</p>
+            <p class="p-0 mx-2">></p>
+            <p class="p-0 m-0">B102各校各班級成績總表</p>
+          </span>
+        </div>
+        <div class="col-md-12 col-lg-3 pandect px-2">
+          <div class="grade">
+            <p class="subject-tests p-0 text-center">成績總覽(國文)</p>
+            <ul class="mb-3 px-3 m-0">
+              <li>
+                班平均:
+                <ul>
+                  <li>選擇(30.05)作文(12.22)合計:(42.27)</li>
+                </ul>
+              </li>
+              <li></li>
+              <li>
+                班前標:
+                <ul>
+                  <li>選擇(36)作文(16)合計(50)</li>
+                </ul>
+              </li>
+              <li>
+                班後標:
+                <ul>
+                  <li>選擇(36)作文(16)合計(50)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-9 list">
+          <div class="box">
+            <form id="list1" class="item-box practice-exam">
+              <div class="title">模擬考</div>
+              <div id="list-1" class="item-list">
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span>110學年度第1次四技二專模擬考 </span>
+                </label>
+
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span> 110年度第二次模擬考_測試 </span>
+                </label>
+
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span>110學年度第3次四技二專模擬考 </span>
+                </label>
+
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span> 110學年度第4次四技二專模擬考</span>
+                </label>
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span>110學年度第5次四技二專模擬考 </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span>110學年度第6次四技二專模擬考 </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="checkbox" />
+                  <span>110年度第一次模擬考</span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="box">
+            <form id="list2" class="item-box report-number">
+              <div class="title">報表編號</div>
+              <div id="list-2" class="item-list">
+                <label class="form-check-label">
+                  <input type="radio" />
+                  <span class="form-check-label" for="flexRadioDefault1">
+                    A102_1 各座號與准考證對照表(非選點卷表)
+                  </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" />
+                  <span class="form-check-label" for="flexRadioDefault1">
+                    A102_1 各座號與准考證對照表(非選點卷表)
+                  </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" />
+                  <span class="form-check-label" for="flexRadioDefault1">
+                    A102_1 各座號與准考證對照表(非選點卷表)
+                  </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" />
+                  <span class="form-check-label" for="flexRadioDefault1">
+                    A102_1 各座號與准考證對照表(非選點卷表)
+                  </span>
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" />
+                  <span class="form-check-label" for="flexRadioDefault1">
+                    A102_1 各座號與准考證對照表(非選點卷表)
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="box">
+            <form id="list3" class="item-box class">
+              <div class="title">班級</div>
+              <div id="list-3" class="checkAllWrap item-list">
+                <div class="formGroup first">
+                  <input type="checkbox" class="ClasscheckAll" />
+                  <label class="form-check-label">全選</label>
+                </div>
+
+                <div lass="formGroup">
+                  <input type="checkbox" name="sort" value="2" />
+                  <label class="form-check-label">應用外語</label>
+                </div>
+
+                <div lass="formGroup">
+                  <input type="checkbox" name="sort" value="3" />
+                  <label class="form-check-label">機二乙</label>
+                </div>
+
+                <div lass="formGroup">
+                  <input type="checkbox" name="sort" value="4" />
+                  <label class="form-check-label">機三乙</label>
+                </div>
+
+                <div lass="formGroup">
+                  <input type="checkbox" name="sort" value="5" />
+                  <label class="form-check-label">室設一</label>
+                </div>
+
+                <div lass="formGroup">
+                  <input type="checkbox" name="sort" value="6" />
+                  <label class="form-check-label">室設三</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="box">
+            <form id="list4" class="item-box kind-group">
+              <div class="title">類組</div>
+              <div id="list-4" class="checkAllWrap item-list">
+                <div class="kindformGroup first">
+                  <input type="checkbox" class="kindcheckAll" />
+                  <label class="form-check-label">全選</label>
+                </div>
+
+                <div lass="kindformGroup">
+                  <input type="checkbox" name="kind" value="2" />
+                  <label class="form-check-label">01-機械群</label>
+                </div>
+
+                <div lass="kindformGroup">
+                  <input type="checkbox" name="kind" value="3" />
+                  <label class="form-check-label">02-電機與電子群</label>
+                </div>
+
+                <div lass="kindformGroup">
+                  <input type="checkbox" name="kind" value="4" />
+                  <label class="form-check-label">03-土木建築群</label>
+                </div>
+
+                <div lass="kindformGroup">
+                  <input type="checkbox" name="kind" value="5" />
+                  <label class="form-check-label">04-商業管理群</label>
+                </div>
+
+                <div lass="kindformGroup">
+                  <input type="checkbox" name="kind" value="6" />
+                  <label class="form-check-label">05-設計群</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="box test">
+            <form id="list5" class="item-box test-suject">
+              <div class="title px-1 d-flex flex-column align-items-center">
+                <p class="m-0 w-100">考試科目</p>
+                <i class="m-0 w-100">※考科僅能單選分</i>
+              </div>
+              <div id="list-5" class="item-list test-sujectarea px-3 py-2">
+                <!-- <a href="./chinese.html">國文</a>
+                <a href="./english.html">英文</a>
+                <a href="./math.html">數學</a>
+                <a href="./professional-1.html">專業一</a>
+                <a href="./professional-2.html">專業二</a>
+                <a href="./all.html">全部</a> -->
+                <div id="SubjectType">
+                  <button
+                    data-subject="CHINESE"
+                    type="button"
+                    class="btn btn-theme my-1"
+                  >
+                    國文
+                  </button>
+                  <button
+                    data-subject="ENGLISH"
+                    type="button"
+                    class="btn btn-theme my-1"
+                  >
+                    英文
+                  </button>
+                  <button
+                    data-subject="MATH"
+                    type="button"
+                    class="btn btn-theme my-1"
+                  >
+                    數學
+                  </button>
+                  <div></div>
+                  <button
+                    data-subject="PRO1"
+                    type="button"
+                    class="btn btn-theme my-1"
+                  >
+                    專業一
+                  </button>
+                  <button
+                    data-subject="PRO2"
+                    type="button"
+                    class="btn btn-theme my-1"
+                  >
+                    專業二
+                  </button>
+                  <button
+                    data-subject="ALL"
+                    type="button"
+                    class="active btn btn-theme my-1"
+                  >
+                    全部
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="table_outer d-flex justify-content-center pb-5">
+        <div class="table_scroll">
+          <table id="myTable" data-toggle="table" data-height="500">
+            <thead>
+              <tr>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  年級
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  類組代碼
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  類組名稱
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  科系代號
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  科系名稱
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  班級
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  座號
+                </th>
+                <th
+                  rowspan="2"
+                  data-sortable="true"
+                  valign="middle"
+                  class="sticky-th"
+                >
+                  姓名
+                </th>
+                <th colspan="7" class="text-center" class="sticky-th">國文</th>
+                <th colspan="17" class="text-center" class="sticky-th">總分</th>
+              </tr>
+              <tr>
+                <th id="choose" data-sortable="true">選擇</th>
+                <th id="composition" data-sortable="true">作文</th>
+                <th id="total" data-sortable="true">合計</th>
+                <th id="Fraction" data-sortable="true">級分</th>
+                <th class="comments">評語一</th>
+                <th class="comments">評語二</th>
+                <th class="comments">評語三</th>
+                <th data-sortable="true">總分</th>
+                <th data-sortable="true">總分級分</th>
+                <th data-sortable="true">轉換統測總分</th>
+                <th data-sortable="true">班級排名</th>
+                <th data-sortable="true">班級人數</th>
+                <th data-sortable="true">類別排名</th>
+                <th data-sortable="true">不含作文總分</th>
+                <th data-sortable="true">不含作文班排名</th>
+                <th data-sortable="true">不含作文類別排名</th>
+                <th data-sortable="true">不含作文跨校排名</th>
+                <th data-sortable="true">共同科總分</th>
+                <th data-sortable="true">共同科班排名</th>
+                <th data-sortable="true">共同科班人數</th>
+                <th data-sortable="true">共同科類別排名</th>
+                <th data-sortable="true">共同科類別人數</th>
+                <th data-sortable="true">共同科跨校排名</th>
+                <th data-sortable="true">共同科跨校人數</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      $(".ClasscheckAll").click(function () {
+        if ($(".ClasscheckAll").prop("checked")) {
+          //如果全選按鈕有被選擇的話（被選擇是true）
+          $("input[name='sort']").prop("checked", true); //把所有的核取方框的變成勾選
+        } else {
+          $("input[name='sort']").prop("checked", false); //把所有的核取方框都取消勾選
+        }
+      });
+      $(".kindcheckAll").click(function () {
+        if ($(".kindcheckAll").prop("checked")) {
+          //如果全選按鈕有被選擇的話（被選擇是true）
+          $("input[name='kind']").prop("checked", true); //把所有的核取方框的變成勾選
+        } else {
+          $("input[name='kind']").prop("checked", false); //把所有的核取方框都取消勾選
+        }
+      });
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </body>
 </html>
