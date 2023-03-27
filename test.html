@@ -118,13 +118,15 @@
       </header>
       <div class="row py-2 m-0 item px-3">
         <div class="col-12 path mb-2">
-          <span class="d-flex flex-row"
-            ><p class="p-0 m-0">九月複習考</p>
-            <p class="p-0 mx-2">></p>
+          <div class="path-group d-flex flex-row">
+            <span class=" d-flex flex-row">
+              <p class="p-0 m-0">九月複習考</p>
+              <p class="p-0">></p>
+            </span>
             <p class="p-0 m-0">B102各校各班級成績總表</p>
-          </span>
+          </div>
         </div>
-        <div class="col-md-12 col-lg-3 pandect px-2">
+        <div class="col-7 col-md-5 col-lg-3 pandect px-2">
           <div class="grade">
             <p class="subject-tests p-0 text-center">成績總覽(國文)</p>
             <ul class="mb-3 px-3 m-0">
@@ -153,7 +155,7 @@
         <div class="col-md-12 col-lg-9 list">
           <div class="box simulation">
             <form id="list1" class="item-box practice-exam">
-              <div class="title">模擬考</div>
+              <p class="title p-0 m-0">模擬考</p>
               <div id="list-1" class="item-list">
                 <label class="form-check-label">
                   <input type="checkbox" />
@@ -191,7 +193,7 @@
           </div>
           <div class="box report">
             <form id="list2" class="item-box report-number">
-              <div class="title">報表編號</div>
+              <p class="title p-0 m-0">報表編號</p>
               <div id="list-2" class="item-list">
                 <label class="form-check-label">
                   <input type="radio" />
@@ -235,65 +237,91 @@
                   <label class="form-check-label">全選</label>
                 </div>
 
-                <div lass="formGroup">
-                  <input type="checkbox" name="sort" value="2" />
-                  <label class="form-check-label">應用外語</label>
+                <div class="formGroup">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="sort" value="2" />
+                    <span>應用外語</span>
+                  </label>
                 </div>
 
-                <div lass="formGroup">
-                  <input type="checkbox" name="sort" value="3" />
-                  <label class="form-check-label">機二乙</label>
+                <div class="formGroup">
+                  <label class="form-check-label"
+                    ><input type="checkbox" name="sort" value="3" />
+                    <span>機二乙</span>
+                  </label>
                 </div>
 
-                <div lass="formGroup">
-                  <input type="checkbox" name="sort" value="4" />
-                  <label class="form-check-label">機三乙</label>
+                <div class="formGroup">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="sort" value="4" />
+                    <span>機三乙</span>
+                  </label>
                 </div>
 
-                <div lass="formGroup">
-                  <input type="checkbox" name="sort" value="5" />
-                  <label class="form-check-label">室設一</label>
+                <div class="formGroup">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="sort" value="5" />
+                    <span>室設一</span>
+                  </label>
                 </div>
 
-                <div lass="formGroup">
-                  <input type="checkbox" name="sort" value="6" />
-                  <label class="form-check-label">室設三</label>
+                <div class="formGroup">
+                  <label class="form-check-label"
+                    ><input type="checkbox" name="sort" value="6" />
+                    <span>室設三</span>
+                  </label>
                 </div>
               </div>
             </form>
           </div>
           <div class="box cluster">
             <form id="list4" class="item-box kind-group">
-              <div class="title">類組</div>
+              <p class="title p-0 m-0">類組</p>
               <div id="list-4" class="checkAllWrap item-list">
                 <div class="kindformGroup first">
-                  <input type="checkbox" class="kindcheckAll" />
-                  <label class="form-check-label">全選</label>
+                  <label class="form-check-label">
+                    <input type="checkbox" class="kindcheckAll" />
+                    <span>全選</span>
+                  </label>
                 </div>
 
-                <div lass="kindformGroup">
-                  <input type="checkbox" name="kind" value="2" />
-                  <label class="form-check-label">01-機械群</label>
+                <div class="kindformGroup">
+                  <label class="form-check-label"
+                    ><input type="checkbox" name="kind" value="2" />
+                    <span>機械群</span>
+                  </label>
                 </div>
 
-                <div lass="kindformGroup">
-                  <input type="checkbox" name="kind" value="3" />
-                  <label class="form-check-label">02-電機與電子群</label>
+                <div class="kindformGroup">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="kind" value="3" /><span
+                      >電機與電子群</span
+                    ></label
+                  >
                 </div>
 
-                <div lass="kindformGroup">
-                  <input type="checkbox" name="kind" value="4" />
-                  <label class="form-check-label">03-土木建築群</label>
+                <div class="kindformGroup">
+                  <label class="form-check-label"
+                    ><input type="checkbox" name="kind" value="4" /><span
+                      >土木建築群</span
+                    ></label
+                  >
                 </div>
 
-                <div lass="kindformGroup">
-                  <input type="checkbox" name="kind" value="5" />
-                  <label class="form-check-label">04-商業管理群</label>
+                <div class="kindformGroup">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="kind" value="5" /><span
+                      >商業管理群</span
+                    ></label
+                  >
                 </div>
 
-                <div lass="kindformGroup">
-                  <input type="checkbox" name="kind" value="6" />
-                  <label class="form-check-label">05-設計群</label>
+                <div class="kindformGroup">
+                  <label class="form-check-label"
+                    ><input type="checkbox" name="kind" value="6" /><span
+                      >設計群</span
+                    ></label
+                  >
                 </div>
               </div>
             </form>
@@ -304,7 +332,7 @@
                 <p class="m-0 w-100">考試科目</p>
                 <i class="m-0 w-100">※考科僅能單選分</i>
               </div>
-              <div id="list-5" class="item-list test-sujectarea px-3 py-2">
+              <div id="list-5" class="item-list test-sujectarea py-2">
                 <!-- <a href="./chinese.html">國文</a>
                 <a href="./english.html">英文</a>
                 <a href="./math.html">數學</a>
@@ -359,212 +387,10 @@
               </div>
             </form>
           </div>
-          <!-- <div class="row">
-            <div class="box col-6 col-md-auto">
-              <form id="list1" class="item-box practice-exam">
-                <div class="title">模擬考</div>
-                <div id="list-1" class="item-list">
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span>110學年度第1次四技二專模擬考 </span>
-                  </label>
-
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span> 110年度第二次模擬考_測試 </span>
-                  </label>
-
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span>110學年度第3次四技二專模擬考 </span>
-                  </label>
-
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span> 110學年度第4次四技二專模擬考</span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span>110學年度第5次四技二專模擬考 </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span>110學年度第6次四技二專模擬考 </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="checkbox" />
-                    <span>110年度第一次模擬考</span>
-                  </label>
-                </div>
-              </form>
-            </div>
-            <div class="box col-6 col-md-auto">
-              <form id="list2" class="item-box report-number">
-                <div class="title">報表編號</div>
-                <div id="list-2" class="item-list">
-                  <label class="form-check-label">
-                    <input type="radio" />
-                    <span class="form-check-label" for="flexRadioDefault1">
-                      A102_1 各座號與准考證對照表(非選點卷表)
-                    </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" />
-                    <span class="form-check-label" for="flexRadioDefault1">
-                      A102_1 各座號與准考證對照表(非選點卷表)
-                    </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" />
-                    <span class="form-check-label" for="flexRadioDefault1">
-                      A102_1 各座號與准考證對照表(非選點卷表)
-                    </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" />
-                    <span class="form-check-label" for="flexRadioDefault1">
-                      A102_1 各座號與准考證對照表(非選點卷表)
-                    </span>
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" />
-                    <span class="form-check-label" for="flexRadioDefault1">
-                      A102_1 各座號與准考證對照表(非選點卷表)
-                    </span>
-                  </label>
-                </div>
-              </form>
-            </div>
-            <div class="box col-6 col-md-auto">
-              <form id="list3" class="item-box class">
-                <div class="title">班級</div>
-                <div id="list-3" class="checkAllWrap item-list">
-                  <div class="formGroup first">
-                    <input type="checkbox" class="ClasscheckAll" />
-                    <label class="form-check-label">全選</label>
-                  </div>
-
-                  <div lass="formGroup">
-                    <input type="checkbox" name="sort" value="2" />
-                    <label class="form-check-label">應用外語</label>
-                  </div>
-
-                  <div lass="formGroup">
-                    <input type="checkbox" name="sort" value="3" />
-                    <label class="form-check-label">機二乙</label>
-                  </div>
-
-                  <div lass="formGroup">
-                    <input type="checkbox" name="sort" value="4" />
-                    <label class="form-check-label">機三乙</label>
-                  </div>
-
-                  <div lass="formGroup">
-                    <input type="checkbox" name="sort" value="5" />
-                    <label class="form-check-label">室設一</label>
-                  </div>
-
-                  <div lass="formGroup">
-                    <input type="checkbox" name="sort" value="6" />
-                    <label class="form-check-label">室設三</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="box col-6 col-md-auto">
-              <form id="list4" class="item-box kind-group">
-                <div class="title">類組</div>
-                <div id="list-4" class="checkAllWrap item-list">
-                  <div class="kindformGroup first">
-                    <input type="checkbox" class="kindcheckAll" />
-                    <label class="form-check-label">全選</label>
-                  </div>
-
-                  <div lass="kindformGroup">
-                    <input type="checkbox" name="kind" value="2" />
-                    <label class="form-check-label">01-機械群</label>
-                  </div>
-
-                  <div lass="kindformGroup">
-                    <input type="checkbox" name="kind" value="3" />
-                    <label class="form-check-label">02-電機與電子群</label>
-                  </div>
-
-                  <div lass="kindformGroup">
-                    <input type="checkbox" name="kind" value="4" />
-                    <label class="form-check-label">03-土木建築群</label>
-                  </div>
-
-                  <div lass="kindformGroup">
-                    <input type="checkbox" name="kind" value="5" />
-                    <label class="form-check-label">04-商業管理群</label>
-                  </div>
-
-                  <div lass="kindformGroup">
-                    <input type="checkbox" name="kind" value="6" />
-                    <label class="form-check-label">05-設計群</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="box test col-6 col-md-auto">
-              <form id="list5" class="item-box test-suject">
-                <div class="title px-1 d-flex flex-column align-items-center">
-                  <p class="m-0 w-100">考試科目</p>
-                  <i class="m-0 w-100">※考科僅能單選分</i>
-                </div>
-                <div id="list-5" class="item-list test-sujectarea px-3 py-2">
-                  <div id="SubjectType">
-                    <button
-                      data-subject="CHINESE"
-                      type="button"
-                      class="btn btn-theme my-1"
-                    >
-                      國文
-                    </button>
-                    <button
-                      data-subject="ENGLISH"
-                      type="button"
-                      class="btn btn-theme my-1"
-                    >
-                      英文
-                    </button>
-                    <button
-                      data-subject="MATH"
-                      type="button"
-                      class="btn btn-theme my-1"
-                    >
-                      數學
-                    </button>
-                    <div></div>
-                    <button
-                      data-subject="PRO1"
-                      type="button"
-                      class="btn btn-theme my-1"
-                    >
-                      專業一
-                    </button>
-                    <button
-                      data-subject="PRO2"
-                      type="button"
-                      class="btn btn-theme my-1"
-                    >
-                      專業二
-                    </button>
-                    <button
-                      data-subject="ALL"
-                      type="button"
-                      class="active btn btn-theme my-1"
-                    >
-                      全部
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div> -->
+       
         </div>
       </div>
+      <a id="gohome" class="" role="button" href="/"></a>
       <div class="table_outer d-flex justify-content-center pb-5">
         <div class="table_scroll">
           <table id="myTable" data-toggle="table" data-height="500">
@@ -699,6 +525,312 @@
                 <td>156.00</td>
                 <td>156.00</td>
               </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
+              <tr>
+                <td class="sticky-td">3</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">機械群</td>
+                <td class="sticky-td">110</td>
+                <td class="sticky-td">機械科</td>
+                <td class="sticky-td">11</td>
+                <td class="sticky-td">01</td>
+                <td class="sticky-td">李沛哲</td>
+                <td>28.00</td>
+                <td>5</td>
+                <td>24.00</td>
+                <td>4.00</td>
+                <td>無法選取相關材料加以發展。</td>
+                <td>結構不完整。</td>
+                <td>表達不清，文句不能連貫。</td>
+                <td>26.25</td>
+                <td>24.00</td>
+                <td>2.25</td>
+                <td>2.25</td>
+                <td></td>
+                <td>20.00</td>
+                <td>4</td>
+                <td>50.00</td>
+                <td>4</td>
+                <td>45.00</td>
+                <td>4</td>
+                <td>30.00</td>
+                <td>45.00</td>
+                <td>169.25</td>
+                <td>21</td>
+                <td>156.00</td>
+                <td>156.00</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -723,7 +855,6 @@
         }
       });
     </script>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
