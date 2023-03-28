@@ -74,7 +74,9 @@ header ul li a:visited {
     align-items: center;
     width: 20%;
 }
-
+.nav-item  a{
+    font-weight: 900;
+  }
 a {
     text-decoration: none !important;
 }
@@ -241,7 +243,13 @@ a {
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.practice-exam .item-list .form-check-label:first-child {
+    margin-top: 10px;
+}
 
+.practice-exam .item-list .form-check-label {
+    margin-top: 5px;
+}
 /*報表編號*/
 .report-number {
     height: 190px;
@@ -275,7 +283,12 @@ a {
     position: static;
     margin: 5px 3px !important;
 }
-
+.report-number .item-list .form-check-label:first-child {
+    margin-top: 10px;
+}
+.report-number .item-list .form-check-label {
+    margin-top: 5px;
+}
 
 
 /* 班級 */
@@ -309,7 +322,12 @@ a {
 .class .checkAllWrap .formGroup {
     white-space: nowrap;
 }
-
+.class .item-list .formGroup:first-child {
+    margin-top: 10px;
+}
+.class .item-list .formGroup {
+    margin-top: 5px;
+}
 /*類組*/
 .kind-group {
     height: 190px;
@@ -343,6 +361,12 @@ a {
     white-space: nowrap;
 }
 
+.kind-group .item-list .kindformGroup:first-child {
+    margin-top: 10px;
+}
+.kind-group .item-list .kindformGroup {
+    margin-top: 5px;
+}
 /*考試科目*/
 .test-suject {
     height: 190px;

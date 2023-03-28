@@ -74,7 +74,9 @@ header ul li a:visited {
     align-items: center;
     width: 20%;
 }
-
+.nav-item  a{
+    font-weight: 900;
+  }
 a {
     text-decoration: none !important;
 }
@@ -213,6 +215,7 @@ a {
 }
 
 
+
 /*模擬考*/
 
 .practice-exam {
@@ -242,7 +245,13 @@ a {
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.practice-exam .item-list .form-check-label:first-child {
+    margin-top: 10px;
+}
 
+.practice-exam .item-list .form-check-label {
+    margin-top: 5px;
+}
 /*報表編號*/
 .report-number {
     height: 190px;
@@ -276,150 +285,13 @@ a {
     position: static;
     margin: 5px 3px !important;
 }
-
-
-
-/* 班級 */
-.class {
-    height: 190px;
-    /* width: 115px; */
-    background-color: #FFFFFF;
-    /* width: 200px; */
-    display: flex;
-    flex-direction: column;
-    /* overflow-y: scroll; */
-    border: 2px solid#DBDBDB;
+.report-number .item-list .form-check-label:first-child {
+    margin-top: 10px;
+}
+.report-number .item-list .form-check-label {
+    margin-top: 5px;
 }
 
-.class .title {
-    width: 100%;
-    height: 45px;
-    /* width: 180px; */
-    background-color: #F7F7F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-family: "Noto Sans TC";
-    font-weight: 900;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.class .checkAllWrap .formGroup {
-    white-space: nowrap;
-}
-
-/*類組*/
-.kind-group {
-    height: 190px;
-    /* width: 155px; */
-    background-color: #FFFFFF;
-    /* width: 200px; */
-    display: flex;
-    flex-direction: column;
-    /* overflow-y: scroll; */
-    border: 2px solid#DBDBDB;
-}
-
-.kind-group .title {
-    width: 100%;
-    height: 45px;
-    /* width: 180px; */
-    background-color: #F7F7F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-family: "Noto Sans TC";
-    font-weight: 900;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.kind-group .checkAllWrap .kindformGroup {
-    white-space: nowrap;
-}
-
-/*考試科目*/
-.test-suject {
-    height: 190px;
-    max-width: 240px;
-    background-color: #FFFFFF;
-    /* width: 200px; */
-    display: flex;
-    flex-direction: column;
-    /* overflow-y: scroll; */
-    border: 2px solid#DBDBDB;
-}
-
-.test-suject .title {
-    width: 100%;
-    height: 45px;
-    /* width: 180px; */
-    background-color: #F7F7F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-family: "Noto Sans TC";
-    font-weight: 900;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.test-suject .title p {
-    /* width: 60%; */
-    text-align: center;
-}
-
-.test-suject .title i {
-    /* width: 40%; */
-    color: red;
-    text-align: center;
-    font-weight: 800;
-}
-
-.test-sujectarea {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center; */
-}
-
-.test-sujectarea a {
-    width: auto;
-    height: auto;
-}
-
-.test-sujectarea .btn-theme {
-    border-color: #223a56;
-    background-color: #223a56;
-    color: #fff;
-    width: auto;
-}
-
-.test-sujectarea .btn-theme:focus {
-    color: #223a56;
-    background-color: #fff;
-}
-
-.chinese {
-    color: #223a56 !important;
-    background-color: #fff !important;
-}
-
-.test-sujectarea .btn-theme:nth-child(5),
-.test-sujectarea .btn-theme:nth-child(6) {
-    width: 74px;
-}
 
 
 #gohome {
